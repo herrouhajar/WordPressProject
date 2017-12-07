@@ -1,0 +1,71 @@
+
+#customize-control-support_link .sungit-lite-support {
+    font-size: 13px;
+    display: block;
+    width: 90%;
+    margin: 5px auto 14px auto;
+    transition: all .5s ease;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #fff;
+    border: 0;
+    border-radius: 50px;
+    background-color: #ED145B;
+    box-shadow: none;
+    line-height: 23px;
+    padding: 9px 10px;
+}
+.sungit-lite-support span {
+    position: relative;
+    line-height: inherit;
+    margin-right: 9px;
+}
+.support-image img {
+    height: 25px;
+    margin-right: 5px;
+    margin-left: 6px;
+}
+.support-image.sungit-lite-support {
+    display: flex !important;
+}
+
+#customize-control-diy_lite_support_links .sungit-lite-support:hover {
+    box-shadow: 0 -3px 0 0 rgba(0,0,0,.3) inset;
+}
+li#accordion-section-sungit_lite_to_pro_discount {
+    display: block !important;
+}
+#accordion-section-sungit_lite_to_pro_discount .whitish-lite-support {
+    font-size: 12px;
+    display: block;
+    width: 90%;
+    margin: 15px 0 14px 0;
+    transition: all .5s ease;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #fff;
+    border: 0;
+    margin-bottom: 0 !important;
+    border-radius: 50px;
+    background-color: #ED145B;
+    box-shadow: none;
+    line-height: 23px;
+    padding: 9px 13px;
+    text-decoration: none;
+}
+.whitish-lite-support span {
+    position: relative;
+    line-height: inherit;
+    margin-right: 4px;
+}
+.whitish-lite-support:hover {
+    box-shadow: 0 -3px 0 0 rgba(0,0,0,.3) inset !important;
+}
+li#accordion-section-sungit_lite_to_pro_discount h3 {
+    text-align: center;
+    padding: 30px 6px;
+    font-size: 18px;
+    line-height: 26px;
+}

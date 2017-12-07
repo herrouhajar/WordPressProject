@@ -1,0 +1,83 @@
+/*!
+Theme Name:
+Theme URI:
+Author: Codethemes
+Author URI:
+Description:
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain:
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others. */
+
+/*--------------------------------------------------------------
+TABLE OF CONTENTS:
+----------------------------------------------------------------
+1. Bootstrap
+2. Base
+    ## Typography
+    ## Helpers
+3. layouts
+4. components
+5. vendors
+6. utils
+
+--------------------------------------------------------------*/
+
+@import "sungit-lite/utils/variables";
+
+
+/*--------------------------------------------------------------
+1. Bootstrap
+--------------------------------------------------------------*/
+@import "vendor/bootstrap",
+        "vendor/font-awesome";
+
+
+/*--------------------------------------------------------------
+2. Base
+--------------------------------------------------------------*/
+@import "vendor/animate",
+        "sungit-lite/base/helpers",
+        "sungit-lite/base/fonts",
+        "sungit-lite/base/typography";
+
+
+/*--------------------------------------------------------------
+
+3. layout
+--------------------------------------------------------------*/
+@import "sungit-lite/layout/footer",
+        "sungit-lite/layout/page-content",
+        "sungit-lite/layout/navigation",
+        "sungit-lite/layout/sections";
+
+
+/*--------------------------------------------------------------
+4. Components
+--------------------------------------------------------------*/
+@import "sungit-lite/component/banner",
+        "sungit-lite/component/blog",
+        "sungit-lite/component/footer",
+        "sungit-lite/component/playlist",
+        "sungit-lite/component/top-header",
+        "sungit-lite/component/widget",
+        "sungit-lite/component/tours";
+
+
+/*--------------------------------------------------------------
+5. Vendors
+--------------------------------------------------------------*/
+@import "vendor/slick",
+        "vendor/jaudio",
+        "vendor/vendor-overrides";
+
+/*--------------------------------------------------------------
+6. utils
+--------------------------------------------------------------*/
+@import "sungit-lite/utils/hover-effects",
+        "sungit-lite/utils/media-queries";
+

@@ -1,0 +1,63 @@
+.jAudio--playlist-item {
+    color: #DDD;
+    text-decoration: none;
+    background: #272727;
+    border-bottom: 1px solid #313131;
+}
+.jAudio--player .jAudio--playlist .jAudio--playlist-item.active * {
+    color: #fff;
+    display: block;
+}
+.jAudio--player .jAudio--playlist .jAudio--playlist-meta-text h4 {
+    font-size: 15px;
+    color: #fff;
+    margin: 0;
+    font-family: Poppins;
+    letter-spacing: 0;
+}
+.jAudio--player .jAudio--playlist .jAudio--playlist-item {
+    display: block;
+    width: 100%;
+    padding: 17px 28px 8px;
+    display: table;
+}
+.jAudio--player .jAudio--playlist .jAudio--playlist-meta-text p {
+    font-size: 11px;
+    margin-bottom: 0;
+}
+.jAudio--player .jAudio--playlist .jAudio--playlist-thumb img {
+    height: 3.4rem;
+    width: 3.4rem;
+    border-radius: 50%;
+    float: left;
+    margin-right: 1.2rem;
+}
+.jAudio--player{
+    box-shadow: none;
+}
+.jAudio--player .jAudio--playlist .jAudio--playlist-item:not(.active):hover {
+    background: #ed145b;
+}
+.jAudio--player .jAudio--status-bar {
+    width: 100%;
+    z-index: 1;
+    position: relative;
+    padding: 20px 33px;
+    display: table;
+    background: #272727;
+    border-bottom: 1px solid #313131;
+}
+.jAudio--player .jAudio--controls ul {
+    display: table;
+    overflow: hidden;
+    width: 100%;
+    padding: 0;
+    li{
+        display: inline-block;
+    }
+}
+.jAudio--player button{
+    outline: 0 !important;
+    box-shadow: none !important;
+    background: #fff;
+}

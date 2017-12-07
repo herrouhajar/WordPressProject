@@ -1,0 +1,422 @@
+.section{
+    padding: 80px 0;
+}
+.section-title{
+    text-align: center;
+    margin-bottom: 45px;
+    h2 {
+        font-family: "Anton";
+        font-size: 35px;
+        color: #222;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        margin-top: 0;
+    }
+    p{
+        color: #333;
+    }
+}
+.screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+.animated-fast {
+    -webkit-animation-duration: .7s;
+    animation-duration: .7s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+@keyframes slfadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 15%, 0);
+    transform: translate3d(0, 15%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.slfadeInDown {
+  -webkit-animation-name: slfadeInDown;
+  animation-name: slfadeInDown;
+}
+
+// Scrollbar
+
+.jAudio--player::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+.jAudio--player::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+.jAudio--player::-webkit-scrollbar-thumb {
+  background: #ed145b;
+  border: 0px none #ed145b;
+  border-radius: 50px;
+}
+.jAudio--player::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+.jAudio--player::-webkit-scrollbar-track {
+  background: #fefdff;
+  border: 13px solid #fefffa;
+  border-radius: 28px;
+}
+.jAudio--player::-webkit-scrollbar-track:hover {
+  background: #fefdff;
+}
+.jAudio--player::-webkit-scrollbar-track:active {
+  background: #242615;
+}
+.jAudio--player::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+.jAudio--player::-moz-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+.jAudio--player::-moz-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+.jAudio--player::-moz-scrollbar-thumb {
+  background: #ed145b;
+  border: 0px none #ed145b;
+  border-radius: 50px;
+}
+.jAudio--player::-moz-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+.jAudio--player::-moz-scrollbar-track {
+  background: #fefdff;
+  border: 13px solid #fefffa;
+  border-radius: 28px;
+}
+.jAudio--player::-moz-scrollbar-track:hover {
+  background: #fefdff;
+}
+.jAudio--player::-moz-scrollbar-track:active {
+  background: #242615;
+}
+.jAudio--player::-moz-scrollbar-corner {
+  background: transparent;
+}
+// Theme required css
+
+.wp-caption-text {
+    font:14px;
+    text-align: center;
+    padding: 10px;
+}
+.gallery-caption {
+    font:14px;
+}
+.bypostauthor{
+    font:14px;
+}
+.alignright{
+    font:14px; text-align:right;display: inline;
+    float: right;
+}
+.alignleft {
+    display: inline;
+    float: left;
+    margin-right: 1.5em;
+}
+.aligncenter{
+    font:14px; text-align:center;
+}
+.wp-caption {
+    border: 1px solid #ccc;
+    margin-bottom: 1.5em;
+    max-width: 100%;font:14px;
+}
+.wp-caption img[class*="wp-image-"] {
+    display: block;
+    margin: 1.2% auto 0;
+    max-width: 98%;
+}
+.wp-caption .wp-caption-text {
+    margin: 0.8075em 0;
+}
+.slick-dots {
+    position: absolute;
+    left: 49%;
+    bottom: 5%;
+    padding: 0;
+    margin-left: 0;
+}
+.slick-dots li{
+    position: relative;
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    margin: 0 3px;
+    padding: 0;
+    cursor: pointer;
+}
+.slick-dots li button {
+    background: transparent;
+    box-shadow: none;
+    display: block;
+    height: 10px;
+    width: 10px;
+    outline: none;
+    line-height: 0px;
+    font-size: 0px;
+    color: transparent;
+    padding: 4px;
+    cursor: pointer;
+    border: 2px solid #fff;
+    border-radius: 100%;
+
+    &:before{
+        border-color: #fff;
+    }
+}
+.slick-dots li.slick-active button{
+    background: #fff !important;
+}
+
+.home-banner{
+    margin-bottom: 15px;
+    .slick-prev{
+        position: absolute;
+        top: 47%;
+        left: 2%;
+        opacity: 1;
+        background: #ed145b;
+        color: #fff;
+        width: 45px;
+        height: 45px;
+        margin-right: 4px;
+        box-shadow: none;
+        font-size:0;
+        z-index:9;
+        line-height: 44px;
+        border: none;
+        opacity: 0;
+        &:before{
+            content: "\f177";
+            font-family: FontAwesome;
+        }
+    }
+    .slick-next{
+        position: absolute;
+        top: 47%;
+        right: 2%;
+        opacity: 1;
+        background: #ed145b;
+        color: #fff;
+        width: 45px;
+        height: 45px;
+        box-shadow: none;
+        font-size:0;
+        opacity: 0;
+        line-height: 44px;
+        border: none;
+        &:before{
+            content: "\f178";
+            font-family: FontAwesome;
+        }
+    }
+    .slick-next:before, .slick-prev:before{
+      font-size: 24px;
+      line-height: 38px;
+    }
+}
+.home-banner:hover .slick-prev,.home-banner:hover .slick-next{
+  opacity: 1;
+}
+
+[dir=rtl]{
+  .search-form .search-submit {
+      clip-path: none;
+      padding: 17px 28px;
+  }
+}
+.jetpack-video-wrapper iframe {
+    width: 100% !important;
+}
+.jAudio--playlist-item {
+    cursor: pointer;
+}
+.widget select {
+    display: block;
+    border-radius: 0;
+    width: 100%;
+    height: 40px;
+    background: none;
+    line-height: 40px;
+}
+.search-results .comments-link a {
+    background: #ed145b;
+    border: 2px solid #ed145b;
+    margin-top: 17px;
+    color: #fff;
+    padding: 8px 10px;
+    display: inline-block;
+    &:hover{
+      color: #000;
+      background: none;
+    }
+}
+.search-results span.edit-link a {
+    background: #ed145b;
+    border: 2px solid #ed145b;
+    margin-top: 17px;
+    color: #fff;
+    padding: 8px 10px;
+    display: inline-block;
+    margin-left: 10px;
+    &:hover{
+      color: #000;
+      background: none;
+    }
+}
+.search-results article{
+    margin-bottom: 35px;
+}
+.search-results header.entry-header h2 {
+    font-size: 22px;
+    margin-top: 10px;
+}
+.search-results span.cat-links {
+    display: block;
+    font-size: 13px;
+}
+.search-results header.page-header {
+    margin-top: 0;
+    h1.page-title{
+      margin-top: 0;
+    }
+}
+.sticky:before {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    content: "\f02e";
+    color: #fff;
+    margin-left: 20px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 35px;
+    background: #009586;
+    right: 20px;
+}
+.sticky:after {
+    border-left: 17px solid transparent;
+    border-right: 17px solid rgba(155, 97, 97, 0);
+    border-top: 14px solid #009586;
+    content: "";
+    height: 0;
+    right: 20px;
+    position: absolute;
+    top: 65px;
+    width: 0;
+}
+.sticky{
+  position: relative;
+}
+.author-bio {
+    background: #f5f5f5;
+    padding: 35px 20px 20px;
+}
+span.author-name {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 11px;
+    display: block;
+}
+.author-image {
+    text-align: right;
+}
+.author-image img {
+    margin-right: 10px;
+    border-radius: 50%;
+    width: 70%;
+}
+
+
+.gallery {
+  margin: 0 -1.1666667% 1.75em;
+}
+
+.gallery-item {
+  display: inline-block;
+  max-width: 33.33%;
+  padding: 0 1.1400652% 2.2801304%;
+  text-align: center;
+  vertical-align: top;
+  width: 100%;
+}
+
+.gallery-columns-1 .gallery-item {
+  max-width: 100%;
+}
+
+.gallery-columns-2 .gallery-item {
+  max-width: 50%;
+}
+
+.gallery-columns-4 .gallery-item {
+  max-width: 25%;
+}
+
+.gallery-columns-5 .gallery-item {
+  max-width: 20%;
+}
+
+.gallery-columns-6 .gallery-item {
+  max-width: 16.66%;
+}
+
+.gallery-columns-7 .gallery-item {
+  max-width: 14.28%;
+}
+
+.gallery-columns-8 .gallery-item {
+  max-width: 12.5%;
+}
+
+.gallery-columns-9 .gallery-item {
+  max-width: 11.11%;
+}
+
+.gallery-icon img {
+  margin: 0 auto;
+}
+
+.gallery-caption {
+  color: #686868;
+  display: block;
+  font-size: 13px;
+  font-size: 0.8125rem;
+  font-style: italic;
+  line-height: 1.6153846154;
+  padding-top: 0.5384615385em;
+}
+
+.gallery-columns-6 .gallery-caption,
+.gallery-columns-7 .gallery-caption,
+.gallery-columns-8 .gallery-caption,
+.gallery-columns-9 .gallery-caption {
+  display: none;
+}
+.gallery-caption {
+    font-size: 13px !important;
+}
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+}

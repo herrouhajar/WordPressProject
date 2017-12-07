@@ -1,0 +1,98 @@
+.widget{
+    .widget-title{
+        font-size: 22px;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        margin-top: 0;
+        margin-bottom: 25px;
+    }
+    ul{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        li{
+            padding-bottom: 9px;
+            a{
+                color: #000;
+                &:hover{
+                    color: $color__theme;
+                }
+            }
+        }
+    }
+}
+//search
+.search-form{
+    width: 100%;
+
+    .search-field {
+        width: 100%;
+        border-radius: 0;
+        border: 1px solid #ddd;
+        padding: 13px 23px;
+        height: auto;
+        outline: 0;
+        -webkit-appearance: none;
+        font-weight: normal;
+        background: #fff;
+        height: auto;
+         &:focus{
+            border: 1px solid $color__theme !important;
+        }
+    }
+    .search-submit {
+        box-shadow: none !important;
+        font-size: 15px;
+        border-radius: 0;
+        background: #ed145b;
+        transition: all .5s ease-in-out 0s;
+        border: none;
+        color: #fff;
+        padding: 17px 42px;
+        margin-left: -6px;
+        border: none;
+        line-height: 14px;
+        margin-left: -44px;
+        width: 32%;
+        -webkit-clip-path: polygon(100% -305%, 0% 100%, 100% 100%);
+        clip-path: polygon(100% -305%, 0% 100%, 100% 100%);
+    }
+}
+.widget_search .search-form label {
+    width: 78%;
+    margin-bottom: 0;
+}
+
+//calendar
+.calendar_wrap{
+    table{
+        background-color: transparent;
+        width: 100%;
+        text-align: center;
+
+        caption{
+            padding: 13px 13px;
+            background: $color__theme;
+            color: #fff;
+            text-align: center;
+            border: none;
+        }
+        td, th{
+            padding: 7px;
+            transition: all .5s ease-in-out 0s;
+            border: 1px solid #313131;
+            text-align: center;
+        }
+    }
+}
+
+//tagcloud
+.tagcloud a {
+    background: #ed145b;
+    color: #fff;
+    font-size: 14px !important;
+    padding: 5px 8px;
+    margin-right: 3px;
+    margin-bottom: 8px;
+    display: inline-block;
+}

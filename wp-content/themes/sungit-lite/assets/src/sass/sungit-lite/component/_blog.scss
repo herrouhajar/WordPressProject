@@ -1,0 +1,94 @@
+.blog-post-wrapper{
+    .blog-post-slide{
+        height: 380px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        display: block;
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        outline: 0;
+        -webkit-transition: all 0.3s ease-out 0s;
+        transition: all 0.3s ease-out 0s;
+        &:before{
+            background: rgba(0,0,0,0.5);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            content: '';
+        }
+    }
+    .blog-desc-wrap{
+        position: relative;
+        padding: 72px 45px;
+        .blog-date{
+            margin-top: 5px;
+            width: 55px;
+            background: #ed145b;
+            text-align: center;
+            padding: 5px 10px;
+
+            span.day{
+                font-size: 18px;
+                font-family: "Anton";
+                color: #fff;
+            }
+            span.month{
+                font-size: 14px;
+                text-transform: uppercase;
+                font-family: "Anton";
+                color: #fff;
+                display: block;
+            }
+        }
+        h2{
+            font-size: 18px;
+            text-transform: uppercase;
+            color: #fff;
+            margin: 30px 0 15px 0;
+            line-height: 30px;
+            letter-spacing: 2px;
+        }
+        p{
+            color: #fff;
+        }
+        .know-more{
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 15px;
+            margin-top: 25px;
+            display: block;
+
+            i{
+                margin-left : 10px;
+            }
+        }
+    }
+    .slide1{
+    background: url("../img/1.jpeg");
+    }
+    .slide2{
+        background: url("../img/2.jpg");
+    }
+    .slide3{
+        background: url("../img/3.jpg");
+    }
+    .slide4{
+        background: url("../img/4.jpeg");
+    }
+    .slide5{
+        background: url("../img/5.jpeg");
+    }
+}
+.blog-post-wrapper .blog-post-slide:hover:before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .3;
+    content: '';
+    background: linear-gradient(-60deg, transparent 64%, transparent 64%), linear-gradient(to bottom, #0510f2, #ea134b);
+}

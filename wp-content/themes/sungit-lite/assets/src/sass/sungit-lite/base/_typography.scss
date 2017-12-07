@@ -1,0 +1,183 @@
+/* Global Styles */
+
+html{
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+html,
+body {
+    width: 100%;
+    height: 100%;
+    color:$color__black-light;
+    line-height: 20px;
+}
+a{
+    color: $color__theme;
+    text-decoration: none !important;
+
+    &:hover{
+      color: #000;
+    }
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: $title-family;
+  letter-spacing: 2px;
+}
+h5, .h5 {
+    font-size: 16px;
+}
+h6, .h6 {
+    font-size: 14px;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+//buttons
+button, input[type="button"], input[type="reset"], input[type="submit"]{
+    box-shadow: none;
+    text-shadow: none;
+}
+// Remove the outline from buttons and a tag
+a, button, .btn, html input[type="button"],
+input[type="reset"], input[type="submit"]{
+    &:hover, &:focus, &:active{
+        outline: 0;
+        box-shadow: none;
+    }
+}
+.sl-btn{
+    border: 3px solid #e2e2e2;
+    padding: 9px 22px;
+    background: transparent;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.2s ease-in-out;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 3px;
+    font-family: "Anton";
+    text-transform: uppercase;
+    border-radius: 0;
+
+    &:hover, &:focus{
+        background: $color__theme;
+        border: 2px solid $color__theme;
+        color: #fff
+    }
+}
+.block:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em;
+}
+
+.centre {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+@keyframes move1 {
+  0% { height: 16%; }
+  25% { height: 66%; }
+  75% { height: 50%; }
+  100% { height: 16%; }
+}
+
+@keyframes move2 {
+  0% { height: 5%; }
+  25% { height: 41%; }
+  75% { height: 66%; }
+  100% { height: 5%; }
+}
+
+@keyframes move3 {
+  0% { height: 25%; }
+  25% { height: 5%; }
+  75% { height: 66%; }
+  100% { height: 25%; }
+}
+
+@keyframes move4 {
+  0% { height: 0; }
+  25% { height: 33%; }
+  75% { height: 75%; }
+  100% { height: 0; }
+}
+
+@keyframes move5 {
+  0% { height: 41%; }
+  25% { height: 16%; }
+  75% { height: 75%; }
+  100% { height: 41%; }
+}
+
+.bars {
+  height: 100px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.bars li {
+  display: inline-block;
+  width: 15px;
+  background: #fff;
+  height: 5%;
+  animation-delay: 1s;
+}
+
+.bar1:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border: solid 0px;
+  border-color: transparent transparent transparent #fff;
+}
+
+.bars:not(.active):hover > .bar1:after {
+  animation: playbtn 1s ease forwards;
+}
+
+
+
+.active .bar1 {
+  animation: move1 infinite 1s linear;
+}
+
+.active .bar2 {
+  animation: move2 infinite 1.2s linear;
+}
+
+.active .bar3 {
+  animation: move3 infinite .8s linear;
+}
+
+.active .bar4 {
+  animation: move4 infinite 1s linear;
+}
+
+.active .bar5 {
+  animation: move5 infinite .5s linear;
+}
+
+
+@keyframes shift1 {
+  0% { height: 50%; }
+  50% { height: 100%; margin-left: -19px; }
+  100% { height: 100%; margin-left: -19px; transform: rotate(45deg); }
+}
+
+@keyframes shift {
+  0% { height: 50%; }
+  50% { height: 100%; margin-left: -19px; }
+  100% { height: 100%; margin-left: -19px; transform: rotate(-45deg); }
+}
+

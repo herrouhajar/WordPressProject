@@ -1,0 +1,93 @@
+/* ....................Media Queries....................... */
+/*Media Queries*/
+@media only screen and (min-width: 1400px){
+}
+@media only screen and (min-width: 990px) and (max-width : 1200px) {
+
+}
+
+@media only screen and (max-width: 989px) {
+    .sl-playlist {
+        margin-bottom: 40px;
+    }
+    .prefooter .widget {
+        margin-bottom: 35px;
+    }
+    .prefooter .social-nav{
+        margin-bottom: 35px;
+    }
+    .search-form .search-submit{
+        width: auto;
+    }
+    .sl-header-sec .nav-wrapper .navbar:before{
+        display :none;
+    }
+    .sl-header-sec .nav-wrapper .navbar:after{
+        display: none;
+    }
+    .sl-header-sec .nav-wrapper .navbar .site-branding{
+        position: relative;
+        margin-left: 15px;
+        left: auto;
+        top: auto;
+        display: inline-block;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .sl-header-sec .nav-wrapper .navbar .site-branding .site-description {
+        margin-bottom: 0;
+    }
+    .navbar-brand{
+        float: none;
+    }
+    .sl-header-sec .nav-wrapper .navbar .navbar-header {
+        z-index: 999;
+        padding: 20px 0;
+    }
+    .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+        border-color: none;
+    }
+    .sl-header-sec .nav-wrapper .navbar ul.dropdown-menu {
+        position: relative;
+        width: 100%;
+    }
+    .sl-header-sec .nav-wrapper .navbar .site-branding{
+        float: left;
+    }
+    .sl-event ul .event-thumb{
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    .nav-wrapper .caret {
+        margin-right: 15px;
+        border-right: 6px solid transparent;
+        border-left: 6px solid transparent;
+        border-top: 6px dashed;
+        right: 10px;
+        float: right;
+        margin-top: 10px;
+    }
+    .sl-header-sec .nav-wrapper .navbar .nav li > a {
+        line-height: 38px;
+    }
+}
+@media only screen and (min-width: 500px) and (max-width : 600px) {
+
+}
+
+@media only screen and (max-width: 480px) {
+    .search-form .search-submit{
+        width: 100%;
+     -webkit-clip-path: none;
+     margin-left: 0;
+    }
+    .widget_search .search-form label{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width : 320px) {
+
+}
